@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Super Mario RPG",
+    "img": "https://upload.wikimedia.org/wikipedia/en/8/89/SuperMarioRPGSNESCoverArtUS.jpg"
+  },
+  {
+    "title": "Super Metroid",
+    "img": "https://upload.wikimedia.org/wikipedia/en/e/e4/Smetroidbox.jpg"
+  },
+  {
+    "title": "Donkey Kong Country",
+    "img": "https://upload.wikimedia.org/wikipedia/en/c/c1/Dkc_snes_boxart.jpg"
+  },
+  {
+    "title": "Chrono Trigger",
+    "img": "https://upload.wikimedia.org/wikipedia/en/a/a7/Chrono_Trigger.jpg"
+  },
+  {
+    "title": "Secret of Mana",
+    "img": "https://upload.wikimedia.org/wikipedia/en/b/b7/Secret_of_Mana_Box.jpg"
+  },
+  {
+    "title": "Mega Man X",
+    "img": "https://upload.wikimedia.org/wikipedia/en/f/f1/Mega_Man_X_Coverart.png"
+  }
+]
