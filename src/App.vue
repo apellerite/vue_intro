@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <div class="row">
       <div class="col text-center">
-        <h1>Vuex 101 :)</h1>
+        <h1>Vuex 101 (SNES Nostalgia Edition)</h1>
       </div>
     </div>
 
