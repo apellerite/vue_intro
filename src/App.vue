@@ -12,7 +12,7 @@
       </div>
     </div>
     <ul class="list-group">
-      <li class="list-group-item" v-for="title in gameTitles" :key="title">{{ title }}</li>
+      <li class="list-group-item" v-for="title in gameTitles" style="background-color: aquamarine" :key="title">{{ title }}</li>
     </ul>
   </div>
 </template>
