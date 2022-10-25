@@ -1,5 +1,7 @@
 on:
   push
+  pull_request:
+    types: [opened]
 name: release-please
 jobs:
   release-please:
@@ -10,3 +12,4 @@ jobs:
           release-type: node
           package-name: release-please-action
           skip-github-release: true
+      - run: echo {{ github.event }}
