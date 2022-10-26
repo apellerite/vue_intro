@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/apellerite/vue_intro/compare/v1.1.0...v1.1.1) (2022-10-26)
+
+
+### Bug Fixes
+
+* change another color ([8850b32](https://github.com/apellerite/vue_intro/commit/8850b32bfea4a9715f79999950f60f899c9416c6))
+* **etc:** testing another line ([e7f2536](https://github.com/apellerite/vue_intro/commit/e7f2536d9b56de609169f43fe04a3ef93812d6e2))
+* more workflow triggers ([4bc7f3e](https://github.com/apellerite/vue_intro/commit/4bc7f3e30e1d46fb4c071414a9fcd55e7346ce5f))
+* more workflow triggers ([606fb12](https://github.com/apellerite/vue_intro/commit/606fb12bdaa7edee78e45934617c7a155356f8d6))
+* **vue:** add a font color ([e7f2536](https://github.com/apellerite/vue_intro/commit/e7f2536d9b56de609169f43fe04a3ef93812d6e2))
+* **vue:** add background color ([4bc7f3e](https://github.com/apellerite/vue_intro/commit/4bc7f3e30e1d46fb4c071414a9fcd55e7346ce5f))
+
 ## [1.1.0](https://github.com/apellerite/vue_intro/compare/v1.0.1...v1.1.0) (2022-10-25)
 
 
