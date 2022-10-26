@@ -7,7 +7,7 @@
     </div>
 
     <div class="row my-4">
-      <div class="col-12 col-md-6 col-lg-4" :key="game.title" v-for="game in games">
+      <div class="col-12 col-md-6 col-lg-4" style="color: red" :key="game.title" v-for="game in games">
         <card @click="removeGame(game);" :name="game.title" :image="game.img"></card>
       </div>
     </div>
