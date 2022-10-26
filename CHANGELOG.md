@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/apellerite/vue_intro/compare/v1.1.1...v1.1.2) (2022-10-26)
+
+
+### Bug Fixes
+
+* **color:** Update delete button ([99acfc7](https://github.com/apellerite/vue_intro/commit/99acfc72e6028d00aa50fd187932d1848d53657c))
+
 ## [1.1.1](https://github.com/apellerite/vue_intro/compare/v1.1.0...v1.1.1) (2022-10-26)
 
 
