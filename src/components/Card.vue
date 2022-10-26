@@ -3,7 +3,7 @@
     <img :src="image" class="card-img-top" />
     <div class="card-body text-center">
       <h5 class="card-title">{{ name }}</h5>
-      <a href="#" @click="$emit('click');" class="btn btn-primary">Delete</a>
+      <a href="#" @click="$emit('click');" class="btn btn-primary" style="background-color: darkslategray;">Delete</a>
     </div>
   </div>
 </template>
