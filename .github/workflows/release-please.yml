@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - test-main
 name: release-please
 jobs:
   release-please:
@@ -11,5 +11,6 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
+          default-branch: test-main
           skip-github-release: true
           skip-labeling: true
