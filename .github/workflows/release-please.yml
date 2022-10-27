@@ -12,5 +12,5 @@ jobs:
           release-type: node
           package-name: release-please-action
           default-branch: test-main
-          skip-github-release: true
+          command: release-pr
           skip-labeling: true
