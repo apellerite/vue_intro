@@ -11,5 +11,3 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
-          skip-github-release: true
-          skip-labeling: true
