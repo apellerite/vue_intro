@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.3](https://github.com/apellerite/vue_intro/compare/v1.1.2...v1.1.3) (2022-10-26)
+
+
+### Bug Fixes
+
+* A fix with a body ([a6d6505](https://github.com/apellerite/vue_intro/commit/a6d65054c1f5e8f153be1c0f27b7a33c72d4639a))
+* **colors:** Adding more color changes, but it's complex so it's multiline ([33f9c1a](https://github.com/apellerite/vue_intro/commit/33f9c1a2591f8bd592e2323f7bf940fb7c15c423))
+* here's another fix ([a6d6505](https://github.com/apellerite/vue_intro/commit/a6d65054c1f5e8f153be1c0f27b7a33c72d4639a))
+* one more time ([a57fbc4](https://github.com/apellerite/vue_intro/commit/a57fbc458e9d2332e6499bab27ac0151caaae3ef))
+
 ## [1.1.2](https://github.com/apellerite/vue_intro/compare/v1.1.1...v1.1.2) (2022-10-26)
 
 
