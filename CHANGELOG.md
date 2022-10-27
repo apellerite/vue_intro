@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/apellerite/vue_intro/compare/v1.3.0...v1.3.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* test empty ([f731cdd](https://github.com/apellerite/vue_intro/commit/f731cdd7bde2bc3e7a2ba60faed895babb22baa2))
+
 ## [1.3.0](https://github.com/apellerite/vue_intro/compare/v1.2.0...v1.3.0) (2022-10-27)
 
 
