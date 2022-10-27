@@ -11,4 +11,4 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
-          command: release-pr
+          skip-github-release: true
