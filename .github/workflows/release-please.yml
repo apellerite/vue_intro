@@ -13,4 +13,4 @@ jobs:
           package-name: release-please-action
           default-branch: test-main
           command: release-pr
-          skip-labeling: true
+          skip-github-release: true
