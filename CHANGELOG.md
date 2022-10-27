@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/apellerite/vue_intro/compare/v1.3.1...v1.3.2) (2022-10-27)
+
+
+### Bug Fixes
+
+* the fix associated with app-xxx ([ce28219](https://github.com/apellerite/vue_intro/commit/ce28219750b6fbf3b03a4ab3372566e4b03d3f03))
+
 ## [1.3.1](https://github.com/apellerite/vue_intro/compare/v1.3.0...v1.3.1) (2022-10-27)
 
 
