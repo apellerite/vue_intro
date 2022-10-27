@@ -14,3 +14,4 @@ jobs:
           default-branch: test-main
           command: release-pr
           skip-github-release: true
+          bootstrap-sha: 4bab0e8cb54e62f3b57b0a799bf03cacc7c77e05
