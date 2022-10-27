@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/apellerite/vue_intro/compare/v1.3.2...v2.0.0) (2022-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Oh no it's breaking
+
+### Bug Fixes
+
+* Oh no it's breaking ([be0956f](https://github.com/apellerite/vue_intro/commit/be0956f45af0d1436349a1b26348e9f21d0d0307))
+
 ## [1.3.2](https://github.com/apellerite/vue_intro/compare/v1.3.1...v1.3.2) (2022-10-27)
 
 
