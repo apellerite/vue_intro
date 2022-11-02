@@ -1,6 +1,6 @@
 {
   "name": "vuex-101-nano-start",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "main": "src/main.js",
   "private": true,
@@ -14,6 +14,7 @@
     "commit": "commit"
   },
   "dependencies": {
+    "@changesets/cli": "^2.25.2",
     "bootstrap": "4.3.1",
     "vue": "^2.5.2",
     "vuex": "3.1.1"
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/prompt": "^17.1.2",
     "@commitlint/prompt-cli": "^17.1.2",
     "autoprefixer": "^10.4.12",
     "babel-core": "^6.22.1",
