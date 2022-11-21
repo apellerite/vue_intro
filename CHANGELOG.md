@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.3
+
+### Patch Changes
+
+- cb286a8: Update the game title color to pink
+- cb9497d: - Change colors of the app
+  - This is also to test another change add to the set
+  - And it has multiple thoughts
+
 ## 2.0.2
 
 ### Patch Changes
