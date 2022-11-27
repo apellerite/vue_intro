@@ -2,16 +2,11 @@ name: Update Version
 
 on:
   pull_request:
-    branches-ignore:
-      - master
-    paths:
-      - '.changeset/**'
     unlabeled:
       - 'status:version-blocked'
 
 jobs:
   if_merged:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -39,6 +34,7 @@ jobs:
 
       - name: Push to Branch
         run: |
+          git checkout ${GITHUB_HEAD_REF}
           git status
           git pull
           git status
