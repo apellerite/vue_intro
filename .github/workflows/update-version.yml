@@ -23,7 +23,7 @@ jobs:
 
       - name: Update Version
         run: |
-          yarn changesets version
+          yarn changeset version
           echo "Updated changelog"
           npm i --package-lock-only
           echo "Updated lockfile"
