@@ -1,0 +1,45 @@
+name: Add Label
+
+on:
+  pull_request:
+    paths:
+      - '.changeset/**'
+    unlabeled:
+      - 'status:version-blocked'
+
+jobs:
+  if_merged:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js 12.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update Version
+        run: |
+          git fetch
+          git checkout ${GITHUB_HEAD_REF}
+          npx changeset version
+          echo "Updated changelog"
+          npm i --package-lock-only
+          echo "Updated lockfile"
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add package*.json CHANGELOG.md .changeset
+          git commit -m "Update version"
+          echo "Commit changes"
+
+      - name: Push to Branch
+        run: |
+          git status
+          git pull
+          git status
+          git push
+          git status
