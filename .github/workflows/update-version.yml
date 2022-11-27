@@ -15,6 +15,7 @@ jobs:
 
       - name: Update Version
         run: |
+          nvm use 12
           npm ci
           echo "Installed changesets"
           npx changesets version
