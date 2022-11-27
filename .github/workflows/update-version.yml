@@ -22,6 +22,8 @@ jobs:
 
       - name: Update Version
         run: |
+          git fetch
+          git checkout ${GITHUB_HEAD_REF}
           npx changeset version
           echo "Updated changelog"
           npm i --package-lock-only
@@ -34,7 +36,6 @@ jobs:
 
       - name: Push to Branch
         run: |
-          git checkout ${GITHUB_HEAD_REF}
           git status
           git pull
           git status
