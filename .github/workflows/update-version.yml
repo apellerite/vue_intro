@@ -2,6 +2,8 @@ name: Update Version
 
 on:
   pull_request:
+    paths:
+      - '.changeset/**'
     unlabeled:
       - 'status:version-blocked'
 
@@ -30,7 +32,7 @@ jobs:
           echo "Updated lockfile"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add package*.json CHANGELOG.md
+          git add package*.json CHANGELOG.md .changeset
           git commit -m "Update version"
           echo "Commit changes"
 
