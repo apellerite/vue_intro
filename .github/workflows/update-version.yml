@@ -16,10 +16,14 @@ jobs:
       - name: Update Version
         run: |
           npm ci
+          echo "Installed changesets"
           npx changesets version
+          echo "Updated changelog"
           npm i --package-lock-only
+          echo "Updated lockfile"
           git add package*.json CHANGELOG.md
           git commit -m "Update version"
+          echo "Commit changes"
 
       - name: Push to branch
         run: |
