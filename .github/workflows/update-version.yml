@@ -2,34 +2,37 @@ name: Update Version
 
 on:
   pull_request:
-    types:
-      - closed
+    paths:
+      - '.changeset/**'
+    unlabeled:
+      - 'status:version-blocked'
 
 jobs:
   if_merged:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      - name: Setup Node.js 16.x
+      - name: Setup Node.js 12.x
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 12.x
 
       - name: Install dependencies
-        run: yarn
+        run: npm ci
 
       - name: Update Version
         run: |
-          yarn changeset version
+          git fetch
+          git checkout ${GITHUB_HEAD_REF}
+          npx changeset version
           echo "Updated changelog"
           npm i --package-lock-only
           echo "Updated lockfile"
-          git config --global user.email "${GITHUB_ACTOR}"
-          git config --global user.name "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add package*.json CHANGELOG.md
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add package*.json CHANGELOG.md .changeset
           git commit -m "Update version"
           echo "Commit changes"
 
@@ -40,23 +43,3 @@ jobs:
           git status
           git push
           git status
-          
-  # version:
-  #   name: Merge
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Repo
-  #       uses: actions/checkout@v2
-
-  #     - name: Setup Node.js 16.x
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 16.x
-
-  #     - name: Install Dependencies
-  #       run: yarn
-
-  #     - name: Create Release Pull Request
-  #       uses: changesets/action@v1
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
