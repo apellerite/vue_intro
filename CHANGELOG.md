@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.4
+
+### Patch Changes
+
+- ba07f0e: Update colors
+
 ## 2.0.3
 
 ### Patch Changes
