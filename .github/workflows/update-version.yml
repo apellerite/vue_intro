@@ -13,9 +13,13 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
       - name: Update Version
         run: |
-          nvm use 12
           npm ci
           echo "Installed changesets"
           npx changesets version
@@ -26,7 +30,7 @@ jobs:
           git commit -m "Update version"
           echo "Commit changes"
 
-      - name: Push to branch
+      - name: Push to Branch
         run: |
           git status
           git pull
