@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.10
+
+### Patch Changes
+
+- d29d8e5: Back to white
+
 ## 2.0.9
 
 ### Patch Changes
