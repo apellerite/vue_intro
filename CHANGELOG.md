@@ -5,6 +5,7 @@
 ### Patch Changes
 
 - f40c456: Change color from white to blue
+- 7d6c87a: Actually it's white again
 
 ## 2.0.7
 
