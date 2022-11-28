@@ -2,8 +2,6 @@ name: Update Version
 
 on:
   pull_request:
-    paths:
-      - '.changeset/**'
     unlabeled:
       - 'status:version-blocked'
 
