@@ -2,15 +2,27 @@ name: Update Version
 
 on:
   pull_request:
-    unlabeled:
-      - 'status:version-blocked'
+    types: unlabeled
 
 jobs:
   check_changes:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
+      - name: Check if "preview" was removed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          pr=${{ github.event.number }}
+          label=$(gh api "repos/$GITHUB_REPOSITORY/issues/$pr/events" \
+              --jq 'map(select(.event == "unlabeled"))[-1].label.name')
+
+          if [[ $label == 'status:version-blocked' ]];
+          then
+              echo "The 'status:version-blocked' label has been removed"
+          else
+              echo "The 'status:version-blocked' label has not been removed"
+              exit -1
+          fi
 
       - name: Setup Node.js 12.x
         uses: actions/setup-node@v2
