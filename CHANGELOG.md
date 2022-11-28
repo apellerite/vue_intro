@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.8
+
+### Patch Changes
+
+- f40c456: Change color from white to blue
+
 ## 2.0.7
 
 ### Patch Changes
