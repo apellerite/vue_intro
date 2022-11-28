@@ -8,7 +8,7 @@ on:
       - 'status:version-blocked'
 
 jobs:
-  if_merged:
+  check_changes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -24,7 +24,7 @@ jobs:
 
       - name: Update Version
         run: |
-          git fetch ${GITHUB_HEAD_REF}
+          git fetch origin ${GITHUB_HEAD_REF}
           git checkout ${GITHUB_HEAD_REF}
           npx changeset version
           echo "Updated changelog"
